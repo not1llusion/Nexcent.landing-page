@@ -186,9 +186,10 @@ svg * {
 }
 
 body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  font-weight: 400;
 }
 
 h1, h2, h3, h4 {
@@ -217,7 +218,11 @@ h4 {
 }
 
 p {
-  color: var(--neutral-gray-color);
+  color: var(--grey-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 a {
@@ -230,11 +235,6 @@ a {
   display: block;
 }
 
-.gray_text {
-  color: #89939E;
-  font-size: 16px;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -245,15 +245,18 @@ a {
   background-color: var(--primary-color);
   border: none;
   color: white;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 18px;
+  border-radius: 6px;
+  padding: 14px 32px;
   align-self: flex-start;
   cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .header {
-  background-color: #F5F7FA;
+  background-color: var(--silver-color);
 }
 .header__inner {
   display: flex;
@@ -264,10 +267,16 @@ a {
 .header__menu {
   display: flex;
   gap: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
 }
 .header__item .is_current {
+  font-family: "Inter", sans-serif;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 .header__actions {
   display: flex;

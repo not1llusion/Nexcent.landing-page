@@ -1,0 +1,33 @@
+.header {
+  background-color: var(--silver-color);
+  
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 50px;
+
+    @include body-text(2, regular);
+  }
+
+  &__item {
+    .is_current {
+      @include body-text(2, medium);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap:14px;
+
+    .btn--login {
+      background-color: #F5F7FA;
+      color: var(--primary-color); 
+    }
+  }
+}
