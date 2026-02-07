@@ -1,0 +1,41 @@
+:root {
+
+  --primary-color: #4CAF4F;
+  --secondary-color: #263238;
+  --info-color: #2194f3;
+  --black-color: #263238;
+  --dgrey-color: #4D4D4D;
+  --grey-color: #717171;
+  --lgrey_color: #89939E;
+  --grey-bluie-color: #ABBED1;
+  --silver-color: #F5F7FA;
+  --white-color: #FFF;
+
+  --shade1-color: #43A046;
+  --shade2-color: #388E3B;
+  --shade5-color: #237D31;
+  --shade3-color: #1B5E1F;
+  --shade4-color: #103E13;
+
+  --tint1-color: #66BB69;
+  --tint2-color: #81C784;
+  --tint3-color: #A5D6A7;
+  --tint4-color: #C8E6C9;
+  --tint5-color: #E8F5E9;
+
+  --warning-color: #FBC02D;
+  --error-color: #E53835;
+  --success-color: #2E7D31;
+
+  --shadow-2px: 0 2px 4px rgba(#AABED1, 0.6);
+  --shadow-4px: 0 4px 8px rgba(#AABED1, 0.4);
+  --shadow-6px: 0 6px 12px rgba(#AABED1, 0.3);
+  --shadow-8px: 0 8px 16px rgba(#AABED1, 0.4);
+  --shadow-16px: 0 16px 32px rgba(#AABED1, 0.3);
+}
+
+// body-fonts variables
+
+$font-main: 'Inter', sans-serif;
+$fw-regular: 400;
+$fw-medium: 500;
