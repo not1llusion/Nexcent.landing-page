@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --primary-color: #4CAF4F;
+  --secondary-color: #263238;
+  --info-color: #2194f3;
+  --neutral-gray-color: #717171;
+  --neutral-dgray-color: #4D4D4D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  margin: 0;
+  color: var(--neutral-dgray-color)
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 76px;
+  }
+
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+p {
+  color: var(--neutral-gray-color);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.green_text {
+    color: var(--primary-color);
+    display: block;
+    }
+
+.gray_text {
+  color: #89939E;
+  font-size: 16px;
+}
+
+.container {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+
+.header {
+  background-color: #F5F7FA;
+  
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    justify-content: space-between;
+    
+  }
+
+  &__menu {
+    display: flex;
+    gap: 50px;
+    font-size: 16px;
+  }
+
+  &__item {
+    .is_current {
+      font-weight: 500;
+    }
+  }
+
+  &__actions {
+
+    display: flex;
+    gap:14px;
+    .btn--login {
+      background-color: #F5F7FA;
+      color: var(--primary-color);
+      
+    }
+  }
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border:none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;  
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.hero {
+  background-color: #F5F7FA;
+  padding: 96px 0 16px 0;
+  display: flex;
+  margin-bottom: 40px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    
+  }
+
+  .btn--register {
+    padding: 14px 32px;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 70px;
+  }
+
+  &__dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    opacity: 30%;
+    border: none;
+
+    &--active {
+      opacity: 100%;
+    }
+  }
+}
+
+.clients {
+  margin-bottom: 40px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 136px;
+  }
+
+}
+
+.community {
+  margin-bottom: 80px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__card {
+    padding: 24px 36px;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+    border-radius: 8px;
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 227px;
+      gap: 8px;
+    }
+
+  }
+
+  h3 {
+      font-weight: 700;
+      margin-top: 8px;
+  }
+
+  p {
+      font-size: 14px;
+      line-height: 20px;
+  }
+}
+
+.unlock {
+  margin-bottom: 48px;
+
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 49px;
+  }
+
+
+
+  &__content {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.achievements {
+  margin-bottom: 48px;
+  background-color: #F5F7FA;
+  padding: 64px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 411px;
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 30px;
+  }
+
+  &__stat {
+    max-width: 255px;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    padding-right: 50px;
+  }
+}
+
+.calender {
+  margin-bottom: 48px;
+
+  
+  &__inner {
+    display: flex;
+
+  }
+
+  &__media {
+    max-width: 442px;
+    
+  }
+
+  &__content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+
+    P {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.customers  {
+  background-color: #F5F7FA;
+  padding: 33px 0;
+  margin-bottom: 48px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__media {
+    max-width: 326px;
+
+  }
+
+  &__content {
+    max-width: 748px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    p {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+    margin-top: 16px;
+  }
+}
+
+.updates {
+  margin-bottom: 94px;
+
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__header {
+    max-width: 626px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    gap:24px
+
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    
+    
+
+
+    &-image {
+      max-width: 368px;
+      position: block;
+      z-index: -1;
+    }
+
+    &-info {
+      margin-top: -95px;
+      background-color: #F5F7FA;
+      border-radius: 8px;
+      max-width: 300px;
+      gap: 16px;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      
+    }
+  }
+}
+
+.demo {
+
+  padding: 32px 0;
+
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    max-width: 680px;
+    text-align: center;
+    
+    h1 {
+      color: #263238;
+    }
+
+    .btn {
+      align-self: auto;
+    }
+  }
+}
+
+.footer {
+  background-color: #263238;
+  padding: 64px 0;
+  
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  &__logo {
+    color: #F5F7FA;
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+
+
+    p {
+      color: #F5F7FA;
+      font-weight: 400;
+    }
+    
+  }
+
+  &__socials {
+    display: flex;
+    gap: 16px;
+    
+  }
+
+  &__nav {
+    display: flex;
+    gap: 30px;
+    
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 160px;
+    padding-right: 50px;
+
+    li {
+      color: #F5F7FA;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+
+      h4 {
+        color: #F5F7FA;
+        margin-bottom: 12px;
+      }
+      
+    }
+
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h4{ 
+      color: #F5F7FA;
+    }
+  }
+
+  &__email {
+    background-color: rgba($color: #F5F7FA, $alpha: 0.2);
+    
+    border: none;
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: #F5F7FA;
+
+    &::placeholder{
+      color: #F5F7FA;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+  Нормализация блочной модели
+ */
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+ }
+ 
+ /**
+   Убираем внутренние отступы слева тегам списков,
+   у которых есть атрибут class
+  */
+ :where(ul, ol):where([class]) {
+   padding-left: 0;
+ }
+ 
+ /**
+   Убираем внешние отступы body и двум другим тегам,
+   у которых есть атрибут class
+  */
+ body,
+ :where(blockquote, figure):where([class]) {
+   margin: 0;
+ }
+ 
+ /**
+   Убираем внешние отступы вертикали нужным тегам,
+   у которых есть атрибут class
+  */
+ :where(
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   ul,
+   ol,
+   dl
+ ):where([class]) {
+   margin-block: 0;
+ }
+ 
+ :where(dd[class]) {
+   margin-left: 0;
+ }
+ 
+ :where(fieldset[class]) {
+   margin-left: 0;
+   padding: 0;
+   border: none;
+ }
+ 
+ /**
+   Убираем стандартный маркер маркированному списку,
+   у которого есть атрибут class
+  */
+ :where(ul[class]) {
+   list-style: none;
+ }
+ 
+ /**
+   Обнуляем вертикальные внешние отступы параграфа,
+   объявляем локальную переменную для внешнего отступа вниз,
+   чтобы избежать взаимодействие с более сложным селектором
+  */
+ p {
+   --paragraphMarginBottom: 24px;
+ 
+   margin-block: 0;
+ }
+ 
+ /**
+   Внешний отступ вниз для параграфа без атрибута class,
+   который расположен не последним среди своих соседних элементов
+  */
+
+ 
+ 
+ /**
+   Упрощаем работу с изображениями
+  */
+ img {
+   display: block;
+   max-width: 100%;
+ }
+ 
+ /**
+   Наследуем свойства шрифт для полей ввода
+  */
+ input,
+ textarea,
+ select,
+ button {
+   font: inherit;
+ }
+ 
+ html {
+   /**
+     Пригодится в большинстве ситуаций
+     (когда, например, нужно будет "прижать" футер к низу сайта)
+    */
+   height: 100%;
+   /**
+     Плавный скролл
+    */
+   scroll-behavior: smooth;
+ }
+ 
+ body {
+   /**
+     Пригодится в большинстве ситуаций
+     (когда, например, нужно будет "прижать" футер к низу сайта)
+    */
+   min-height: 100%;
+   /**
+     Унифицированный интерлиньяж
+    */
+   line-height: 1.5;
+ }
+ 
+ /**
+   Приводим к единому цвету svg-элементы
+  */
+ svg *[fill] { fill: currentColor }
+ svg *[stroke] { stroke: currentColor }
+ 
+ /**
+   Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+  */
+ svg * {
+   transition-property: fill, stroke;
+ }
+ 
+ /**
+   Удаляем все анимации и переходы для людей,
+   которые предпочитают их не использовать
+  */
+ @media (prefers-reduced-motion: reduce) {
+   * {
+     animation-duration: 0.01ms !important;
+     animation-iteration-count: 1 !important;
+     transition-duration: 0.01ms !important;
+     scroll-behavior: auto !important;
+   }
+ }
