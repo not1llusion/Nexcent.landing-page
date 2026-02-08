@@ -364,7 +364,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
+  gap: 16px;
 }
 .clients__header {
   display: flex;
@@ -373,6 +373,7 @@ a {
   align-items: center;
 }
 .clients__list {
+  padding: 25px 0;
   display: flex;
   gap: 136px;
 }

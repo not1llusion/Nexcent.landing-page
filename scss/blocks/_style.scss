@@ -1,30 +1,5 @@
 
 
-
-.clients {
-  margin-bottom: 40px;
-
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 35px;
-  }
-
-  &__header {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-  }
-
-  &__list {
-    display: flex;
-    gap: 136px;
-  }
-
-}
-
 .community {
   margin-bottom: 80px;
 
@@ -259,9 +234,7 @@
 }
 
 .demo {
-
   padding: 32px 0;
-
 
   &__inner {
     display: flex;
