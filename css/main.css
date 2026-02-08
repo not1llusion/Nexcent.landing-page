@@ -194,7 +194,7 @@ body {
 
 h1, h2, h3, h4 {
   font-weight: 600;
-  color: var(--dgray-color);
+  color: var(--dgrey-color);
 }
 
 h1 {
@@ -306,6 +306,7 @@ a {
   display: flex;
   gap: 14px;
   margin-left: auto;
+  transform: translateX(24px);
 }
 .header__actions .btn--login {
   background-color: #F5F7FA;
@@ -313,9 +314,8 @@ a {
 }
 
 .hero {
-  background-color: #F5F7FA;
+  background-color: var(--silver-color);
   padding: 96px 0 16px 0;
-  display: flex;
   margin-bottom: 40px;
 }
 .hero__inner {
@@ -327,6 +327,10 @@ a {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 660px;
+}
+.hero__content h1 {
+  font-size: 68px;
 }
 .hero .btn--register {
   padding: 14px 32px;
