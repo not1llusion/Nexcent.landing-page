@@ -1,0 +1,46 @@
+.updates {
+  margin-bottom: 94px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__header {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    p {
+      @include body-text(2, regular);
+    }
+  }
+
+  &__cards {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
+    &-info {
+      margin-top: -95px;
+      background-color: #F5F7FA;
+      border-radius: 8px;
+      max-width: 305px;
+      gap: 16px;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      box-shadow: var(--shadow-8px);
+    }
+  }
+}

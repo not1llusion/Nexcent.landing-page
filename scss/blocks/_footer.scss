@@ -1,0 +1,76 @@
+.footer {
+  background-color: #263238;
+  padding: 64px 0;
+  
+  &__inner {
+    display: flex;
+    justify-content: space-between;  
+  }
+
+  &__logo {
+    color: #F5F7FA;
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+    p {
+      color: #F5F7FA;
+      font-weight: 400;
+    } 
+  }
+
+  &__socials {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 30px;  
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 160px;
+    padding-right: 50px;
+
+    li {
+      color: #F5F7FA;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+
+      h4 {
+        color: #F5F7FA;
+        margin-bottom: 12px;
+      }   
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h4{ 
+      color: #F5F7FA;
+    }
+  }
+
+  &__email {
+    background-color: rgba($color: #F5F7FA, $alpha: 0.2);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: #F5F7FA;
+
+    &::placeholder{
+      color: #F5F7FA;
+    }
+  }
+}

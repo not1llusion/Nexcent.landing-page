@@ -1,0 +1,24 @@
+.calender {
+  margin-bottom: 48px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__media {
+    max-width: 442px;
+  }
+
+  &__content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    
+    P {
+      @include body-text (3, regular);
+      margin-bottom: 16px;
+    }
+  }
+}

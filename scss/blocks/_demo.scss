@@ -1,0 +1,22 @@
+.demo {
+  padding: 32px 0;
+  background-color: var(--silver-color);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    max-width: 680px;
+    text-align: center;
+    
+    h1 {
+      color: var(--secondary-color);
+    }
+
+    .btn {
+      align-self: auto;
+    }
+  }
+}
