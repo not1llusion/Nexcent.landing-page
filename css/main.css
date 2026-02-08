@@ -278,7 +278,15 @@ a {
   display: flex;
   align-items: center;
   padding: 18px 0;
-  justify-content: space-between;
+  position: relative;
+}
+.header__logo {
+  margin-right: auto;
+}
+.header__nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .header__menu {
   display: flex;
@@ -297,6 +305,7 @@ a {
 .header__actions {
   display: flex;
   gap: 14px;
+  margin-left: auto;
 }
 .header__actions .btn--login {
   background-color: #F5F7FA;
