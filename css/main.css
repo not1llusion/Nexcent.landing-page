@@ -241,6 +241,22 @@ a {
   width: 100%;
 }
 
+.logo {
+  display: flex;
+  gap: 8px;
+  color: var(--secondary-color);
+}
+.logo h3 {
+  font-weight: bold;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.logo h3::before {
+  content: url("/images/logo_icon.svg");
+  margin-left: -43px;
+}
+
 .btn {
   background-color: var(--primary-color);
   border: none;
@@ -261,7 +277,7 @@ a {
 .header__inner {
   display: flex;
   align-items: center;
-  padding: 18px;
+  padding: 18px 0;
   justify-content: space-between;
 }
 .header__menu {
