@@ -1,0 +1,21 @@
+.unlock {
+  margin-bottom: 48px;
+  
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 49px;
+  }
+
+  &__content {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column; 
+    gap: 16px;
+
+    p {
+      @include body-text(3, regular);
+      margin-bottom: 16px;
+    }
+  }
+}

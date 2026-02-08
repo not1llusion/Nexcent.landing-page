@@ -54,7 +54,6 @@
   }
 
   p {
-      font-size: 14px;
-      line-height: 20px;
+      @include body-text(3, regular);
   }
 }

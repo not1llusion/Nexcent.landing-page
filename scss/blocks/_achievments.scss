@@ -1,0 +1,41 @@
+.achievements {
+  margin-bottom: 48px;
+  background-color: var(--silver-color);
+  padding: 64px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 411px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    p {
+      @include body-text (2, regular);
+      color: var(--black-color);
+    }
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(255px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 30px;
+  }
+
+  &__stat {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+
+    h3 {
+        font-weight: 700;
+    }
+  }
+}
