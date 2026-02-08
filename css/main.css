@@ -171,11 +171,11 @@ svg * {
   --warning-color: #FBC02D;
   --error-color: #E53835;
   --success-color: #2E7D31;
-  --shadow-2px: 0 2px 4px rgba(#AABED1, 0.6);
-  --shadow-4px: 0 4px 8px rgba(#AABED1, 0.4);
-  --shadow-6px: 0 6px 12px rgba(#AABED1, 0.3);
-  --shadow-8px: 0 8px 16px rgba(#AABED1, 0.4);
-  --shadow-16px: 0 16px 32px rgba(#AABED1, 0.3);
+  --shadow-2px: 0 2px 4px rgba(170, 190, 209, 0.2);
+  --shadow-4px: 0 4px 8px rgba(170, 190, 209, 0.4);
+  --shadow-6px: 0 6px 12px rgba(170, 190, 209, 0.3);
+  --shadow-8px: 0 8px 16px rgba(170, 190, 209, 0.4);
+  --shadow-16px: 0 16px 32px rgba(170, 190, 209, 0.3);
 }
 
 * {
@@ -398,7 +398,7 @@ a {
 }
 .community__card {
   padding: 24px 36px;
-  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+  box-shadow: var(--shadow-2px);
   border-radius: 8px;
 }
 .community__card-inner {
@@ -408,6 +408,18 @@ a {
   text-align: center;
   max-width: 227px;
   gap: 8px;
+}
+.community__icon {
+  transform: translate(-17px, -8px);
+}
+.community__icon-inner {
+  background-color: var(--tint5-color);
+  border-radius: 10px 5px 18px 5px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .community h3 {
   font-weight: 700;
