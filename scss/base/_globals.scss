@@ -58,22 +58,35 @@ a {
 }
 
 .logo {
-    display: flex;
-    gap: 8px;
-    color: var(--secondary-color);
-    
+ 
     h3 {
-        font-weight: bold;
+      font-weight: bold;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      color: var(--secondary-color);
+      
+      &::before {
+      content: url("/images/logo_icon.svg");
+      margin-left: -43px;
+      }
+    }
+
+    &-df {
+      
+      h2 {
         display: flex;
-        gap: 8px;
-        align-items: center;
+        gap: 10px;
+        color: var(--white-color);
 
         &::before {
-        content: url("/images/logo_icon.svg");
-        margin-left: -43px;
-        }
+        content: url("/images/logo_icon-df.svg");
+        margin: 0;  
+      }
     }
+  }
 }
+
 
 .btn {
     background-color: var(--primary-color);

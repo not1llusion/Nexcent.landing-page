@@ -242,20 +242,25 @@ a {
   width: 100%;
 }
 
-.logo {
-  display: flex;
-  gap: 8px;
-  color: var(--secondary-color);
-}
 .logo h3 {
   font-weight: bold;
   display: flex;
   gap: 8px;
   align-items: center;
+  color: var(--secondary-color);
 }
 .logo h3::before {
   content: url("/images/logo_icon.svg");
   margin-left: -43px;
+}
+.logo-df h2 {
+  display: flex;
+  gap: 10px;
+  color: var(--white-color);
+}
+.logo-df h2::before {
+  content: url("/images/logo_icon-df.svg");
+  margin: 0;
 }
 
 .btn {
@@ -672,13 +677,15 @@ a {
   padding-right: 50px;
 }
 .footer__list li {
-  color: #F5F7FA;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
 }
+.footer__list li a {
+  color: var(--silver-color);
+}
 .footer__list li h4 {
-  color: #F5F7FA;
+  color: var(--silver-color);
   margin-bottom: 12px;
 }
 .footer__contact {
@@ -687,18 +694,49 @@ a {
   gap: 24px;
 }
 .footer__contact h4 {
-  color: #F5F7FA;
+  color: var(--silver-color);
 }
-.footer__email {
-  background-color: rgba(245, 247, 250, 0.2);
+.footer__contact .subscribe__wrapper {
+  position: relative;
+  width: 100%;
+}
+.footer__contact .subscribe__input {
   border: none;
+  width: 100%;
+  background-color: rgba(245, 247, 250, 0.2);
   border-radius: 8px;
-  padding: 10px 12px;
-  color: #F5F7FA;
+  padding: 0 12px;
+  height: 40px;
+  line-height: 40px;
+  color: var(--silver-color);
 }
-.footer__email::-moz-placeholder {
-  color: #F5F7FA;
+.footer__contact .subscribe__input::-moz-placeholder {
+  color: var(--silver-color);
+  line-height: inherit;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
-.footer__email::placeholder {
-  color: #F5F7FA;
+.footer__contact .subscribe__input::placeholder {
+  color: var(--silver-color);
+  line-height: inherit;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer__contact .subscribe__btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: rgba(245, 247, 250, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

@@ -225,35 +225,45 @@
 <footer class="footer">
     <div class="container footer__inner">
         <div class="footer__brand">
-            <a href="#" class="footer__logo"><div class="logo"><h3>Nexcent</h3></div></a>
+            <a href="#" class="footer__logo"><div class="logo logo-df"><h2>Nexcent</h2></div></a>
             <p>Copyright © 2020 Nexcent ltd.<br>All rights reserved</p>
             <div class="footer__socials">
-                <img src="./images/social_1.svg" alt="">
-                <img src="./images/social2.svg" alt="">
-                <img src="./images/social_3.svg" alt="">
-                <img src="./images/social4.svg" alt="">
+                <a href="#"><img src="./images/social_1.svg" alt=""></a>
+                <a href="#"><img src="./images/social2.svg" alt=""></a>
+                <a href="#"><img src="./images/social_3.svg" alt=""></a>
+                <a href="#"><img src="./images/social4.svg" alt=""></a>
             </div>
         </div>
         <div class="footer__nav">
             <ul class="footer__list">
                 <li><h4>Company</h4></li>
-                <li>About us</li>
-                <li>Blog</li>
-                <li>Contact us</li>
-                <li>Pricing</li>
-                <li>Testimonials</li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Testimonials</a></li>
             </ul>
             <ul class="footer__list">
                 <li><h4>Support</h4></li>
-                <li>Help center</li>
-                <li>Terms of service</li>
-                <li>Legal</li>
-                <li>Privacy policy</li>
-                <li>Status</li>
+                <li><a href="#">Help center</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Status</a></li>
             </ul>
             <div class="footer__contact">
                 <h4>Stay up to date</h4>
-                <input type="text" class="footer__email" placeholder="Your email address">
+                <form class="subscribe">
+                    <div class="subscribe__wrapper">
+                    <input
+                    type="email"
+                    class="subscribe__input"
+                    placeholder="Your email address"
+                    required
+                    />
+                    <button class="subscribe__btn" type="submit"><img src="./images/send_icon.svg" alt=""></button>
+                    </form>
+                 </div>
             </div>
         </div>
     </div>
