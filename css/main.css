@@ -329,6 +329,16 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+.hero__track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+.hero__slider {
+  overflow: hidden;
+}
+.hero__slide {
+  min-width: 100%;
+}
 .hero__content {
   display: flex;
   flex-direction: column;
