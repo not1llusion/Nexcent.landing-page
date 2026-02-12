@@ -155,10 +155,9 @@ svg * {
   --dgrey-color: #4D4D4D;
   --grey-color: #717171;
   --lgrey_color: #89939E;
-  --grey-bluie-color: #ABBED1;
+  --grey-blue-color: #ABBED1;
   --silver-color: #F5F7FA;
   --white-color: #FFF;
-  --black-color: #000;
   --shade1-color: #43A046;
   --shade2-color: #388E3B;
   --shade5-color: #237D31;
@@ -183,7 +182,6 @@ svg * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter";
 }
 
 body {
@@ -240,6 +238,7 @@ a {
   max-width: 1152px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 16px;
 }
 
 .logo h3 {
@@ -281,18 +280,20 @@ a {
   background-color: var(--silver-color);
 }
 .header__inner {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   padding: 18px 0;
   position: relative;
 }
 .header__logo {
   margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 .header__nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header__menu {
   display: flex;
@@ -345,8 +346,13 @@ a {
   gap: 16px;
   max-width: 660px;
 }
-.hero__content h1 {
+.hero__title h1 {
   font-size: 68px;
+  line-height: 76px;
+}
+.hero__title h2 {
+  font-size: 68px;
+  line-height: 76px;
 }
 .hero .btn--register {
   padding: 14px 32px;
