@@ -39,3 +39,23 @@
     }
   }
 }
+
+
+@include tablet {
+
+  .achievements {
+     &__inner {
+    
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+
+    &__stats { 
+      grid-template-columns: repeat(2,  1fr);
+      grid-template-rows: repeat(2, 1fr);
+      
+    }
+
+  }
+}

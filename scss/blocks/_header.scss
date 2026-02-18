@@ -4,7 +4,7 @@
   &__inner {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    padding: 18px 0;
+    padding: 18px 16px;
     position: relative;
   }
 
@@ -37,11 +37,80 @@
     display: flex;
     gap: 14px;
     margin-left: auto;
-    transform: translateX(24px);
+    align-items: center;
+    justify-content: center;
+    
 
     .btn--login {
       background-color: #F5F7FA;
       color: var(--primary-color); 
     }
+
+    .btn--burger {
+      
+      width: 30px;
+      height: 24px;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      background: none;
+      border: none;
+      
+      & span, &::before, &::after {
+        content: '';
+        display: block;
+        border-radius: 5px;
+        height: 3px;
+        background: var(--primary-color);
+      }
+    }
+  }
+}
+
+@include laptop {
+  .btn {
+    padding: 12px 14px;
+    @include body-text(3, medium);
+  }
+  
+  .header {
+
+    &__menu {
+      gap: 24px;
+    }
+  }
+
+}
+
+@include tablet {
+  .header {
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+    &__nav {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .btn--burger {
+    display: flex;
+  }
+
+  }
+
+
+  
+}
+
+@include mobile {
+  .header{
+
+    
   }
 }

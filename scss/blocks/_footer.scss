@@ -105,3 +105,12 @@
     }
   }
 }
+
+
+@include tablet {
+  .footer{
+    &__inner {
+      flex-direction: column;
+    }
+  }
+}

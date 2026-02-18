@@ -1,0 +1,44 @@
+.mobile-menu {
+        position: fixed;
+        z-index: 1000;
+        inset: 0;
+        background: #FFF; 
+        align-items: center;
+        
+        display: flex;
+        flex-direction: column;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        margin: auto 0;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 8px 12px;
+
+        .btn-close {
+            background: none;
+            border: none;
+            
+        }
+    }
+
+    
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}

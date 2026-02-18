@@ -57,3 +57,24 @@
       @include body-text(3, regular);
   }
 }
+
+@include tablet {
+  .community {
+    &__cards {
+    
+    flex-direction: column;
+    gap: 32px;
+    
+  }
+}
+}
+@include mobile {
+
+  // .community {
+  //    &__cards {
+    
+  //   flex-direction: column;
+    
+  // }
+  // }
+}

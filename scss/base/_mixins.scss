@@ -22,3 +22,21 @@
         line-height: 16px;
     }
 }
+
+@mixin laptop {
+    @media (max-width: 1072px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 780px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 576px) {
+        @content;
+    }
+}

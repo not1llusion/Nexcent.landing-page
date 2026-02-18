@@ -53,3 +53,12 @@
     margin-top: 16px;
   }
 }
+
+@include tablet {
+  .customers {
+
+    &__inner {
+      flex-direction: column;
+    }
+  }
+}

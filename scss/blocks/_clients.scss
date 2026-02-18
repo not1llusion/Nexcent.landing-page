@@ -16,9 +16,23 @@
   }
 
   &__list {
-    padding: 25px 0;
+    padding: 25px 16px;
     display: flex;
-    gap: 136px;
+    gap: 126px;
+    max-width: 1056px;
+    width: 100%;
   }
 
+}
+
+
+
+@include mobile {
+
+  .clients {
+
+    &__list {
+      gap: 10px;
+    }
+  }
 }

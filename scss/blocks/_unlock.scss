@@ -19,3 +19,11 @@
     }
   }
 }
+
+@include tablet {
+  .unlock {
+    &__inner {
+      flex-direction: column;
+    }
+  }
+}
